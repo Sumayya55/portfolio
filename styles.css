@@ -1,0 +1,143 @@
+Body {
+    font-family: 'Josefin Sans';  
+    text-align: center;
+}
+
+h1 {
+    font-weight: 900;
+    /* font-size: 3rem; */
+}
+
+h2 {
+    padding-bottom: 4%;
+    color: #FF9F29;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+.container-fluid {
+    padding: 3% 6%;
+}
+
+.btn {
+    border-radius: 0;
+    margin: 0.2rem 0.5rem;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed; 
+    background-color: white; 
+    z-index: 1;
+    width: 100%;
+    right: 0;
+    top: 0;
+    padding: 2% 2% 1%;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    animation: mySpinner 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mySpinner{
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-45deg)
+    }
+    to {
+        transform: rotate(-360deg)
+    }
+}
+
+.nav-link, .arrow-icon{
+    color: black;
+    transition: font-size 0.1s;
+    margin: 0 3rem;
+}
+
+.nav-link:hover, .arrow-icon:hover {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Head Section */
+.heading {
+    margin: 2% 6% 12%;
+}
+
+.heading-txt-div {
+    margin: auto 0 auto 0;
+}
+
+.heading-txt {
+    background-color: black;
+    color: white;
+}
+.avatar {
+    height: 100%;
+    width: 80%;
+}
+
+/* About Section */
+.colored-section {
+    background-color: #F9F9F9;
+}
+.about-txt {
+    line-height: 1.5;
+    padding: 0 25%;   
+}
+
+.download-icon {
+    font-size: 3rem;
+    color: black;
+    padding: 1% 0;
+}
+
+/* Projects Section */
+.card {
+    width: 20rem; 
+    margin: 2% auto 0 auto;
+}
+
+.card-img {
+    height: 15rem;
+}
+
+/* Blogs Section */
+.blog-div {
+    text-align: left;
+}
+
+.vertical-divider {
+    width: 100px;
+    height:3px;
+    background-color:black;
+    margin-bottom: 2%;
+}
+.blog-title {
+    font-weight: 900;
+}
+
+/* Contact Section */
+.social-icon {
+    margin: 2% 1%;
+    font-size: 2rem;   
+}
+
+@media (max-width: 768px){
+    .avatar {
+        width: 80%;
+        height: 60%;
+        margin-top: 30%;
+    }
+}
